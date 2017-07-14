@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_forecast"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/yloop"
+    tools:context="com.example.anirudhs.weatherapp.ForecastActivity">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="18dp"
+        android:id="@+id/firstImage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="43dp"
+        android:id="@+id/secondImage"
+        android:layout_below="@+id/firstImage"
+        android:layout_alignLeft="@+id/firstImage"
+        android:layout_alignStart="@+id/firstImage" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_below="@+id/secondImage"
+        android:layout_alignRight="@+id/secondImage"
+        android:layout_alignEnd="@+id/secondImage"
+        android:layout_marginTop="39dp"
+        android:id="@+id/thirdImage" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_below="@+id/thirdImage"
+        android:layout_alignRight="@+id/thirdImage"
+        android:layout_alignEnd="@+id/thirdImage"
+        android:layout_marginTop="46dp"
+        android:id="@+id/fourthImage" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/fourthImage"
+        android:layout_alignEnd="@+id/fourthImage"
+        android:layout_marginBottom="53dp"
+        android:id="@+id/fifthImage" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_alignTop="@+id/secondImage"
+        android:layout_alignRight="@+id/firstText"
+        android:textColor="#FFFFFF"
+        android:layout_alignEnd="@+id/firstText"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginLeft="85dp"
+        android:layout_marginStart="85dp"
+        android:id="@+id/secondText" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/fourthImage"
+        android:layout_alignLeft="@+id/secondText"
+        android:layout_alignStart="@+id/secondText"
+
+        android:id="@+id/fourthText" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:layout_alignTop="@+id/fifthImage"
+        android:layout_alignLeft="@+id/fourthText"
+        android:layout_alignStart="@+id/fourthText"
+        android:id="@+id/fifthText" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/thirdImage"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:layout_alignLeft="@+id/fourthText"
+        android:layout_alignStart="@+id/fourthText"
+        android:id="@+id/thirdText" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:fontFamily="sans-serif-black"
+        android:textSize="15dp"
+        android:layout_marginStart="56dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:id="@+id/firstText"
+        android:layout_alignTop="@+id/firstImage"
+        android:layout_toRightOf="@+id/firstImage"
+        android:layout_toEndOf="@+id/firstImage" />
+
+</RelativeLayout>
